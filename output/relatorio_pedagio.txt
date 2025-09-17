@@ -1,0 +1,10 @@
+Relatório de fluxo semanal
+Segunda-Feira: 1 carros
+Terça-Feira: 2 carros
+Quarta-Feira: 3 carros
+Quinta-Feira: 4 carros
+Sexta-Feira: 5 carros
+Sábado: 6 carros
+Domingo: 7 carros <--- DIA DE PICO!
+
+RELATÓRIO CONCLUÍDO: O DIA COM MAIS MOVIMENTO FOI Domingo COM 7 CARROS!
