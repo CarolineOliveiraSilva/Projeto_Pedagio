@@ -9,6 +9,10 @@
 #define reset "\x1b[0m"
 #define dias 7
 
+#define usuario "Administrador"
+#define senha "1234"
+#define tentativasdelogin 3
+
 typedef struct {
     char nome[20];
     int quantidadedeCarros;
@@ -25,6 +29,39 @@ int lerDadosDoArquivo(dadosDoDia semana[]);
 resultado processardados(const dadosDoDia semana[]);
 void mostrarResultado(const dadosDoDia semana[], resultado resultadoFinal); 
 void salvarArquivo(const dadosDoDia semana[], resultado resultadoFinal);
+
+
+int login(){
+    char nomedousuario[20];
+    char senhaDigitada[10];
+    int tentativas = 0;
+
+    while (tentativas < tentativasdelogin)
+    {
+        printf("PEDÁGIO SIGA BEM\n");
+        printf("Login\n");
+        printf("Digite seu nome de usuario: ");
+        scanf("%s", nomedousuario);
+
+        printf("\nDigite sua senha: ");
+        scanf("%s" , senhaDigitada);
+
+        if(strcmp(nomedousuario, usuario) == 0 && (strcmp(senhaDigitada, senha))== 0){
+            printf(verde "Login realizado com sucesso!Acesso liberado\n"reset);
+            Sleep(1500);
+            return 0;
+
+        }else{
+            tentativas ++;
+            printf(vermelho"Nome ou senha incorreta\n" reset);
+
+            if(tentativas < tentativasdelogin){
+                printf("Você tem mais %d tentativas",tentativasdelogin - tentativas);
+            }
+        }
+     }
+     return 1;
+    }
 
 void lerDadosManual(dadosDoDia semana[]){
     printf("\nPEDÁGIO SIGA BEM \n");
@@ -134,6 +171,11 @@ int main(){
         strcpy(semana[i].nome, nomeDosDias[i]);
         semana[i].quantidadedeCarros = 0;
     }
+
+    if(login() != 0){
+        return 1;
+    }
+    system("cls");
 
     printf("PEDAGIO SIGA BEM\n");
     printf("\nAnálise semanal de fluxo\n");
