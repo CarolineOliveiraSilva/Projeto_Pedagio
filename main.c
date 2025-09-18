@@ -156,7 +156,7 @@ void salvarArquivo(const dadosDoDia semana[], resultado resultadoFinal){
 }
 
 int main(){
-    setlocale(LC_ALL, "Portuguese");
+    
     SetConsoleOutputCP(65001);
 
     int opcao;
