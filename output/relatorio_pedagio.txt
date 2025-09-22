@@ -1,10 +1,10 @@
 Relatório de fluxo semanal
-Segunda-Feira: 4567 carros
-Terça-Feira: 2733 carros
-Quarta-Feira: 28764 carros
-Quinta-Feira: 897 carros
-Sexta-Feira: 8923 carros
-Sábado: 223234 carros <--- DIA DE PICO!
-Domingo: 3789 carros
+Segunda-Feira: 1 carros
+Terça-Feira: 2 carros
+Quarta-Feira: 3 carros
+Quinta-Feira: 4 carros
+Sexta-Feira: 5 carros
+Sábado: 64 carros <--- DIA DE PICO!
+Domingo: 50 carros
 
-RELATÓRIO CONCLUÍDO: O DIA COM MAIS MOVIMENTO FOI Sábado COM 223234 CARROS!
+RELATÓRIO CONCLUÍDO: O DIA COM MAIS MOVIMENTO FOI Sábado COM 64 CARROS!
