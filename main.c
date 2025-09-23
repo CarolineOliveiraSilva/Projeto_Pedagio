@@ -48,10 +48,10 @@ int login(){
         printf("\t\tPEDÁGIO SIGA BEM\n");
         printf("=====================================================\n");
         printf("\n\tMenu de Login\n");
-        printf("\nDigite seu nome de usuario: ");
+        printf("\nDigite seu nome de usuario(Administrador): "); //para facilitar já deixei o usurio na tela
         scanf("%s", nomedousuario);
 
-        printf("\nDigite sua senha: ");
+        printf("\nDigite sua senha(1234): ");
         scanf("%s" , senhaDigitada);
 
         // Compara o usuário e a senha digitados com as constantes definidas.
